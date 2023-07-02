@@ -16,8 +16,8 @@
     },
     "attributes": {},
     "groups": {}
-  }
-},
+    }
+  },
     "characterKrech": {
       "biography": "",
       "Lebensenergie": {
@@ -101,17 +101,16 @@
         }
       },
     "groups": {}
+    },
+  "Item": {
+    "types": ["item"],
+    "htmlFields": ["description"],
+    "item": {
+      "description": "",
+      "quantity": 1,
+      "weight": 0,
+      "attributes": {},
+      "groups": {}
+    }
   }
-},
-"Item": {
-  "types": ["item"],
-  "htmlFields": ["description"],
-  "item": {
-    "description": "",
-    "quantity": 1,
-    "weight": 0,
-    "attributes": {},
-    "groups": {}
-  }
-}
 }
