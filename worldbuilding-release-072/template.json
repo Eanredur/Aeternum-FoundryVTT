@@ -1,107 +1,151 @@
 {
-"Actor": {
-  "types": ["character"],
+"Actor":
+{
+  "types": ["character", "characterKrech"],
   "htmlFields": ["biography"],
-  "character": {
+  "character":
+  {
     "biography": "",
-    "health": {
+    "health":
+    {
       "value": 10,
       "min": 0,
       "max": 10
     },
-    "power": {
+    "power":
+    {
       "value": 5,
       "min": 0,
       "max": 5
     },
     "attributes": {},
     "groups": {}
-    }
   },
-    "characterKrech": {
-      "biography": "",
-      "Lebensenergie": {
-        "value": 10,
-        "min": 0,
-        "max": 10
-      },
-      "power": {
-        "value": 5,
-        "min": 0,
-        "max": 5
-      },
-      "attributes": {
-        "Eigenschaften Körper": {
-          "Geschick": {
-            "Schwierigkeit": 1,
-            "Begabung": 1,
-            "Stunden": 1,
-            "Heldenpunkte": 1
-          },
-          "Körpergefühl":
-          {
-            "Schwierigkeit": 1,
-            "Begabung": 1,
-            "Stunden": 1,
-            "Heldenpunkte": 1
-          },
-          "Kraft": {
-            "Schwierigkeit": 1,
-            "Begabung": 1,
-            "Stunden": 1,
-            "Heldenpunkte": 1
-          },
-          "Reflexe": {
-            "Schwierigkeit": 1,
-            "Begabung": 1,
-            "Stunden": 1,
-            "Heldenpunkte": 1
-          },
-          "Robustheit": {
-            "Schwierigkeit": 1,
-            "Begabung": 1,
-            "Stunden": 1,
-            "Heldenpunkte": 1
-          }
+  "common":
+  {
+    "biography": "",
+    "Lebensenergie":
+    {
+      "value": 10,
+      "min": 0,
+      "max": 10
+    },
+    "power":
+    {
+      "value": 5,
+      "min": 0,
+      "max": 5
+    },
+    "attributes":
+    {
+      "Eigenschaften Körper":
+      {
+        "Geschick":
+        {
+          "Schwierigkeit": 1,
+          "Begabung": 1,
+          "Stunden": 1,
+          "Heldenpunkte": 1
         },
-        "Eigenschaften Geist": {
-          "Ausstrahlung": {
-            "Schwierigkeit": 1,
-            "Begabung": 1,
-            "Stunden": 1,
-            "Heldenpunkte": 1
-          },
-          "Gedächtnis": {
-            "Schwierigkeit": 1,
-            "Begabung": 1,
-            "Stunden": 1,
-            "Heldenpunkte": 1
-          },
-          "Intelligenz":
-          {
-            "Schwierigkeit": 1,
-            "Begabung": 1,
-            "Stunden": 1,
-            "Heldenpunkte": 1
-          },
-          "Konzentration":
-          {
-            "Schwierigkeit": 1,
-            "Begabung": 1,
-            "Stunden": 1,
-            "Heldenpunkte": 1
-          },
-          "Wille":
-          {
-            "Schwierigkeit": 1,
-            "Begabung": 1,
-            "Stunden": 1,
-            "Heldenpunkte": 1
-          }
+        "Körpergefühl":
+        {
+          "Schwierigkeit": 1,
+          "Begabung": 1,
+          "Stunden": 1,
+          "Heldenpunkte": 1
+        },
+        "Kraft":
+        {
+          "Schwierigkeit": 1,
+          "Begabung": 1,
+          "Stunden": 1,
+          "Heldenpunkte": 1
+        },
+        "Reflexe":
+        {
+          "Schwierigkeit": 1,
+          "Begabung": 1,
+          "Stunden": 1,
+          "Heldenpunkte": 1
+        },
+        "Robustheit":
+        {
+          "Schwierigkeit": 1,
+          "Begabung": 1,
+          "Stunden": 1,
+          "Heldenpunkte": 1
         }
       },
-    "groups": {}
+      "Eigenschaften Geist":
+      {
+        "Ausstrahlung":
+        {
+          "Schwierigkeit": 1,
+          "Begabung": 1,
+          "Stunden": 1,
+          "Heldenpunkte": 1
+        },
+        "Gedächtnis":
+        {
+          "Schwierigkeit": 1,
+          "Begabung": 1,
+          "Stunden": 1,
+          "Heldenpunkte": 1
+        },
+        "Intelligenz":
+        {
+          "Schwierigkeit": 1,
+          "Begabung": 1,
+          "Stunden": 1,
+          "Heldenpunkte": 1
+        },
+        "Konzentration":
+        {
+          "Schwierigkeit": 1,
+          "Begabung": 1,
+          "Stunden": 1,
+          "Heldenpunkte": 1
+        },
+        "Wille":
+        {
+          "Schwierigkeit": 1,
+          "Begabung": 1,
+          "Stunden": 1,
+          "Heldenpunkte": 1
+        }
+      }
     },
+    "groups": {}
+  },
+  "charakterKrech":
+  {
+    "templates": ["common"],
+    "attributes":
+    {
+      "aura": {
+        "external": 0,
+        "internal": 0
+      },
+      "details":
+      {
+        "xp":
+        {
+          "Heldenpunkte":
+          {
+            "value": 0,
+            "min": 0
+          },
+          "Erfahrung":
+          {
+            "value": 0,
+            "min": 0
+          }
+        }
+      }
+    }
+
+  }
+},
   "Item": {
     "types": ["item"],
     "htmlFields": ["description"],
