@@ -1,4 +1,4 @@
-{
+y{
   "id": "aeternum_system",
   "version": "0.1",
   "title": "Aeternum",
@@ -35,6 +35,6 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "manifest": "https://raw.githubusercontent.com/foundryvtt/worldbuilding/master/system.json",
+  "manifest": "https://raw.githubusercontent.com/foundryvtt/worldbuilding/emily/system.json",
   "download": "https://github.com/foundryvtt/worldbuilding/archive/refs/tags/release-072.zip"
 }
