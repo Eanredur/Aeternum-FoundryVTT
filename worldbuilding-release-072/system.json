@@ -35,6 +35,6 @@ y{
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "manifest": "https://raw.githubusercontent.com/foundryvtt/worldbuilding/emily/system.json",
+  "manifest": "https://raw.githubusercontent.com/foundryvtt/worldbuilding/master/system.json",
   "download": "https://github.com/foundryvtt/worldbuilding/archive/refs/tags/release-072.zip"
 }
