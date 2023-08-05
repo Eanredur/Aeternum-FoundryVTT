@@ -1,0 +1,22 @@
+{
+  "AETERNUM.AbilityStr": "Strength",
+  "AETERNUM.AbilityCon": "Constitution",
+  "AETERNUM.AbilityDex": "Dexterity",
+  "AETERNUM.AbilityInt": "Intelligence",
+  "AETERNUM.AbilityWis": "Wisdom",
+  "AETERNUM.AbilityCha": "Charisma",
+
+  "AETERNUM.AbilityStrAbbr": "str",
+  "AETERNUM.AbilityConAbbr": "con",
+  "AETERNUM.AbilityDexAbbr": "dex",
+  "AETERNUM.AbilityIntAbbr": "int",
+  "AETERNUM.AbilityWisAbbr": "wis",
+  "AETERNUM.AbilityChaAbbr": "cha",
+
+  "AETERNUM.EffectCreate": "Create Effect",
+  "AETERNUM.EffectToggle": "Toggle Effect",
+  "AETERNUM.EffectEdit": "Edit Effect",
+  "AETERNUM.EffectDelete": "Delete Effect",
+
+  "AETERNUM.Add": "Add"
+}

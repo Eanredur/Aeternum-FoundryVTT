@@ -1,0 +1,34 @@
+{
+  "id": "aeternum",
+  "title": "Aeternum",
+  "description": "The Aeternum system for FoundryVTT!",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": 11,
+    "verified": "11.307",
+    "maximum": 11
+  },
+  "authors": [{
+    "name": "Argalad"
+  }],
+  "esmodules": ["module/aeternum.mjs"],
+  "styles": ["css/aeternum.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 1.5,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt",
+  "changelog": "CHANGELOG.md"
+}
