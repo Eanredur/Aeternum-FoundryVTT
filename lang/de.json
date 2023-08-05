@@ -1,6 +1,6 @@
 {
   "AETERNUM.AttributeGes": "Geschick",
-  "AETERNUM.AttributeKoer": "Körpergefühl",
+  "AETERNUM.AttributeKör": "Körpergefühl",
   "AETERNUM.AttributeKra": "Kraft",
   "AETERNUM.AttributeRef": "Reflexe",
   "AETERNUM.AttributeRob": "Robustheit",
@@ -10,8 +10,11 @@
   "AETERNUM.AttributeKon": "Konzentration",
   "AETERNUM.AttributeWil": "Wille",
 
+  "AETERNUM.AttributeTes" : "Test",
+  "AETERNUM.AttributeTesAbbr": "tes",
+
   "AETERNUM.AttributeGesAbbr": "ges",
-  "AETERNUM.AttributeKoerAbbr": "kör",
+  "AETERNUM.AttributeKörAbbr": "kör",
   "AETERNUM.AttributeKraAbbr": "kra",
   "AETERNUM.AttributeRefAbbr": "ref",
   "AETERNUM.AttributeRobAbbr": "rob",
@@ -33,12 +36,19 @@
   "AETERNUM.AbilityDex": "Geschick",
   "AETERNUM.AbilityInt": "Intelligenz",
   "AETERNUM.AbilityWis": "Weisheit",
-  "AETERNUM.AbilityCha": "Charisma",
+  "AETERNUM.AbilityCha": "Charismaaaa",
+  "AETERNUM.AbilityTes": "Test",
 
   "AETERNUM.AbilityStrAbbr": "str",
   "AETERNUM.AbilityConAbbr": "kon",
   "AETERNUM.AbilityDexAbbr": "ges",
   "AETERNUM.AbilityIntAbbr": "int",
   "AETERNUM.AbilityWisAbbr": "wei",
-  "AETERNUM.AbilityChaAbbr": "cha"
+  "AETERNUM.AbilityChaAbbr": "cha",
+
+  "AETERNUM.CharacterAbilities": "Fertigkeiten",
+  "AETERNUM.Spells": "Zauber",
+  "AETERNUM.Magic": "Magie",
+  "AETERNUM.Effects": "Effekte",
+  "AETERNUM.Equipment": "Ausrüstung"
 }

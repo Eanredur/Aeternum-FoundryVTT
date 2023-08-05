@@ -41,6 +41,9 @@
         },
         "cha": {
           "value": 10
+        },
+        "tes": {
+          "value": 10
         }
       }
     },
@@ -50,7 +53,7 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell"],
+    "types": ["item", "feature", "spell", "skill"],
     "templates": {
       "base": {
         "description": ""
@@ -67,7 +70,8 @@
     },
     "spell": {
       "templates": ["base"],
-      "spellLevel": 1
+      "spellLevel": 1,
+      "vector": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }
   }
 }
