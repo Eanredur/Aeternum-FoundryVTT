@@ -10,7 +10,7 @@ export class AeternumActorSheet extends ActorSheet {
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
       classes: ["aeternum", "sheet", "actor"],
-      template: "systems/aeternum/templates/actor/actor-sheet.html",
+      template: "systems/aeternum/templates/actor/actor-sheet.hbs",
       width: 600,
       height: 600,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
@@ -19,7 +19,7 @@ export class AeternumActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/aeternum/templates/actor/actor-${this.actor.type}-sheet.html`;
+    return `systems/aeternum/templates/actor/actor-${this.actor.type}-sheet.hbs`;
   }
 
   /* -------------------------------------------- */
@@ -225,5 +225,4 @@ export class AeternumActorSheet extends ActorSheet {
       return roll;
     }
   }
-
 }
