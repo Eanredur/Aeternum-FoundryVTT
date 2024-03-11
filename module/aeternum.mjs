@@ -135,3 +135,99 @@ function rollItemMacro(itemUuid) {
     item.roll();
   });
 }
+
+
+Hooks.on('ready', () => {
+  // Define the roll function
+  function aroll(value, bonus = 0) {
+    const die = Math.ceil(Math.random()*100);
+    const random_part = Math.floor(die * value / 100);
+    const result = random_part + value + bonus;
+    console.log('Rolled', result)
+    return result;
+  }
+
+  // Handle chat messages
+  Hooks.on('chatMessage', (chatLog, messageText) => {
+    // Check if the message starts with "aroll"
+    if (messageText.startsWith('aroll(')) {
+      // Extract the values from the message
+      let match = messageText.match(/aroll\((\d+),\s*(\d+)\)/);
+      if (match) {
+        let value = parseInt(match[1]);
+        let bonus = parseInt(match[2]);
+        
+        // Perform the roll
+        let rollResult = aroll(value, bonus);
+
+        // Determine who to send the message to
+        let chatData = {
+          user: game.user._id,
+          speaker: ChatMessage.getSpeaker(),
+          content: `Rolled ${value} + ${bonus} = ${rollResult}`
+        };
+        if (game.user.isGM) {
+          chatData.whisper = ChatMessage.getWhisperRecipients('GM');
+        }
+
+        // Send the message to the chat
+        ChatMessage.create(chatData);
+      }
+    }
+  });
+});
+
+
+Hooks.on('init', () => {
+  // Register the /aroll chat command
+  game.settings.register('my-game-system', 'aroll', {
+    name: 'aroll',
+    scope: 'world',
+    config: false,
+    default: '',
+    type: String
+  });
+});
+
+Hooks.on('ready', () => {
+  // Handle chat messages
+  Hooks.on('chatMessage', async (chatLog, messageText) => {
+    // Check if the message starts with "/aroll"
+    if (messageText.startsWith('/aroll')) {
+      // Parse the command arguments
+      let args = messageText.split(' ');
+      // Remove the "/aroll" part from the arguments
+      args.shift();
+
+      let value = parseInt(args[0]);
+      let bonus = 0; // default bonus value
+
+      // Check if there is a bonus provided
+      if (args.length > 1) {
+        bonus = parseInt(args[1]);
+      }
+
+      // Roll the dice using Foundry VTT's built-in roll function
+      let roll = new Roll(`1d100`);
+      try {
+        await roll.evaluate(); // Wait for the roll to be evaluated
+      } catch (error) {
+        console.error("Error evaluating roll:", error);
+        return;
+      }
+
+      let rollResult = roll.total;
+      let totalRoll = Math.floor(roll.total/100 * value) + value + bonus;
+
+      // Create a chat message with the result
+      ChatMessage.create({
+        user: game.user._id,
+        speaker: ChatMessage.getSpeaker(),
+        content: `Rolled ${value}d6 ${bonus >= 0 ? '+' : ''} ${bonus} = ${totalRoll}`
+      });
+    }
+  });
+});
+
+
+
