@@ -68,7 +68,17 @@ function get_value_of_steigerbar_with_steigerungsgrenze(
     schwierigkeit,
     spezielle_erfahrungen
 ) {
-    return Math.min(calculate_steigerungsgrenze(begabung, spezielle_erfahrungen), get_value_of_steigerbar(heldenpunktefaktor, stunden, heldenpunkte, begabung, schwierigkeit));
+    return Math.min(
+        calculate_steigerungsgrenze(
+            begabung, 
+            spezielle_erfahrungen), 
+        get_value_of_steigerbar(
+            heldenpunktefaktor, 
+            stunden, 
+            heldenpunkte, 
+            begabung, 
+            schwierigkeit)
+            );
 }
 
 export {
