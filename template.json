@@ -1,12 +1,12 @@
 {
   "Actor": {
-    "types": ["character", "npc"],
+    "types": ["PC", "NPC"],
     "templates": {
       "base": {
-        "health": {
-          "value": 10,
-          "min": 0,
-          "max": 10
+        "Lebenspunkte": {
+          "value": 150,
+          "min": -150,
+          "max": 150
         },
         "power": {
           "value": 5,
@@ -16,62 +16,119 @@
         "biography": ""
       }
     },
-    "character": {
+    "Charakter": {
       "templates": ["base"],
-      "attributes": {
-        "level": {
-          "value": 1
-        }
-      },
-      "abilities": {
-        "str": {
-          "value": 10
+      "eigenschaften": {
+        "ges": {
+          "stunden": 0,
+          "heldenpunkte": 0,
+          "erfahrungen": 0,
+          "begabung": 1,
+          "schwierigkeit": 1
         },
-        "dex": {
-          "value": 10
+        "kör": {
+          "stunden": 0,
+          "heldenpunkte": 0,
+          "erfahrungen": 0,
+          "begabung": 1,
+          "schwierigkeit": 1
         },
-        "con": {
-          "value": 10
+        "kra": {
+          "stunden": 0,
+          "heldenpunkte": 0,
+          "erfahrungen": 0,
+          "begabung": 1,
+          "schwierigkeit": 1
+        },
+        "ref": {
+          "stunden": 0,
+          "heldenpunkte": 0,
+          "erfahrungen": 0,
+          "begabung": 1,
+          "schwierigkeit": 1
+        },
+        "rob": {
+          "stunden": 0,
+          "heldenpunkte": 0,
+          "erfahrungen": 0,
+          "begabung": 1,
+          "schwierigkeit": 1
+        },
+        "aus": {
+          "stunden": 0,
+          "heldenpunkte": 0,
+          "erfahrungen": 0,
+          "begabung": 1,
+          "schwierigkeit": 1
+        },
+        "ged": {
+          "stunden": 0,
+          "heldenpunkte": 0,
+          "erfahrungen": 0,
+          "begabung": 1,
+          "schwierigkeit": 1
         },
         "int": {
-          "value": 10
+          "stunden": 0,
+          "heldenpunkte": 0,
+          "erfahrungen": 0,
+          "begabung": 1,
+          "schwierigkeit": 1
         },
-        "wis": {
-          "value": 10
+        "kon": {
+          "stunden": 0,
+          "heldenpunkte": 0,
+          "erfahrungen": 0,
+          "begabung": 1,
+          "schwierigkeit": 1
         },
-        "cha": {
-          "value": 10
-        },
-        "tes": {
-          "value": 10
+        "wil": {
+          "stunden": 0,
+          "heldenpunkte": 0,
+          "erfahrungen": 0,
+          "begabung": 1,
+          "schwierigkeit": 1
         }
       }
     },
-    "npc": {
+    "NPC": {
       "templates": ["base"],
       "cr": 0
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell", "skill"],
+    "types": ["Gegenstand", "Feature", "Zauber", "Talent", "Effekt"],
     "templates": {
       "base": {
-        "description": ""
+        "name": "",
+        "beschreibung": ""
       }
     },
-    "item": {
+    "Gegenstand": {
       "templates": ["base"],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+      "anzahl": 1,
+      "gewicht": 0
     },
-    "feature": {
+    "Feature": {
       "templates": ["base"]
     },
-    "spell": {
+    "Zauber": {
       "templates": ["base"],
       "spellLevel": 1,
       "vector": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    },
+    "Talent": {
+      "templates": ["base"],
+      "stunden": 0,
+      "heldenpunkte": 0,
+      "erfahrungen": 0,
+      "begabung": 1,
+      "schwierigkeit": 1
+    }, 
+    "Effekt": {
+      "templates": ["base"],
+      "Effekt_Id": 0,
+      ""
     }
   }
 }
