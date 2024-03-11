@@ -127,8 +127,7 @@
     }, 
     "Effekt": {
       "templates": ["base"],
-      "Effekt_Id": 0,
-      ""
+      "Effekt_Id": 0
     }
   }
 }

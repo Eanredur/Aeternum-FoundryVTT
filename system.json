@@ -20,7 +20,7 @@
       "lang": "de",
       "name": "Deutsch",
       "path": "lang/de.json"
-    },
+    }
   ],
   "gridDistance": 1.5,
   "gridUnits": "m",
