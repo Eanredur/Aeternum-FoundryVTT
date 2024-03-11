@@ -1,23 +1,18 @@
-export const AETERNUM = {};
+const AETERNUM = {};
 
 /**
  * The set of Ability Scores used within the sytem.
  * @type {Object}
  */
- AETERNUM.abilities = {
-  "str": "AETERNUM.AbilityStr",
-  "dex": "AETERNUM.AbilityDex",
-  "con": "AETERNUM.AbilityCon",
-  "int": "AETERNUM.AbilityInt",
-  "wis": "AETERNUM.AbilityWis",
-  "cha": "AETERNUM.AbilityCha"
-};
-
-AETERNUM.abilityAbbreviations = {
-  "str": "AETERNUM.AbilityStrAbbr",
-  "dex": "AETERNUM.AbilityDexAbbr",
-  "con": "AETERNUM.AbilityConAbbr",
-  "int": "AETERNUM.AbilityIntAbbr",
-  "wis": "AETERNUM.AbilityWisAbbr",
-  "cha": "AETERNUM.AbilityChaAbbr"
-};
+ AETERNUM.eigenschaften = {
+     "ges" : "AETERNUM.AttributeGes",
+     "kör" : "AETERNUM.AttributeKör",
+     "kra" : "AETERNUM.AttributeKra",
+     "ref" : "AETERNUM.AttributeRef",
+     "rob" : "AETERNUM.AttributeRob",
+     "aus" : "AETERNUM.AttributeAus",
+     "ged" : "AETERNUM.AttributeGed",
+     "int" : "AETERNUM.AttributeInt",
+     "kon" : "AETERNUM.AttributeKon"
+ }
+export { AETERNUM}
