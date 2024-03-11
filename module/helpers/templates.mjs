@@ -5,11 +5,12 @@
  */
  export const preloadHandlebarsTemplates = async function() {
   return loadTemplates([
+      // Actor partials.
+      "systems/aeternum/templates/actor/parts/actor-features.hbs",
+      "systems/aeternum/templates/actor/parts/actor-items.hbs",
+      "systems/aeternum/templates/actor/parts/actor-spells.hbs",
+      "systems/aeternum/templates/actor/parts/actor-effects.hbs",
+      "systems/aeternum/templates/actor/parts/actor-abilities.hbs"
 
-    // Actor partials.
-    "systems/aeternum/templates/actor/parts/actor-features.html",
-    "systems/aeternum/templates/actor/parts/actor-items.html",
-    "systems/aeternum/templates/actor/parts/actor-spells.html",
-    "systems/aeternum/templates/actor/parts/actor-effects.html",
   ]);
 };
